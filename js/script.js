@@ -35,5 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
         myobserver.observe(el);
     });
 
-
+    
 });
