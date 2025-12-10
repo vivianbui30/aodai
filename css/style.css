@@ -1860,13 +1860,16 @@ body > * {
     position: relative;
     width: 100%;
     height: auto;
+    background-color: red;
+    background-image: none;
 }
 
 .site-footer .content {
-    position: absolute;
+    position: static;
+    /* position: absolute;
     top: 80px;
     left: 50px;
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 1; */
 }
