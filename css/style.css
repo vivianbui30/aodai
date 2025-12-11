@@ -1124,7 +1124,7 @@ body > * {
 
 .vertical_timeline {
     margin: 50px 0;
-    padding: 0 50px;
+    padding: 0 70px;
     position: relative;
 }
 
@@ -1151,16 +1151,12 @@ body > * {
     list-style: none;
 }
 
-
-
-
-
 .timeline_progress_bar {
     background-color: var(--color-darkbrown-100);
     position: absolute;
     height: 630vh;
     width: 10px;
-    top: 0px;
+    top: -5px;
     right: 50%;
     border-radius: 20px;
     overflow: hidden;
@@ -1354,6 +1350,7 @@ body > * {
         left: 20%;  
     } */
 
+
     .timeline_progress_bar {
         left: 15%;
     }
@@ -1375,20 +1372,34 @@ body > * {
         height: 80%;
         width: 10px;
         border-radius: 20px;
-        translate: -150% -50%;
+        translate: -350% -50%;
         position: relative;
         z-index: 100;
     }
 
     .timeline_progress_bar {
         width: 5px;
+        height: 100%;
+    }
+
+    .timeline_progress {
+        background-color: var(--color-beige);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: -8500px;
+        border-radius: 20px;
+        animation-timeline: scroll(root);
+        animation-name: scaleProgress;
+        animation-duration: auto;
+        animation-timing-function: cubic-bezier(0.04, -0.07, 1, 0.75);
     }
     
     
     .timeline_points div {
         height: 20px;
         width: 20px;
-        border: 5px solid #595B3C;
+        border: 5px var(--color-darkbrown-100) ;
     }
 
     /* .content-1 {
@@ -1445,6 +1456,10 @@ body > * {
         padding-top: 20px;
         padding-bottom: 40px;
     }
+
+    .timeline-content {
+        padding-left: 2rem;
+    }
 }
 
 .content h1 {
@@ -1469,6 +1484,21 @@ body > * {
     color: var(--color-lightbrown-100);
 }
 
+@media (width < 768px) {
+    .content h1 {
+        font-size: 9rem;
+        text-align: center;
+    }
+    .content h2 {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .content-9 .custom,
+    .content-10 .custom {
+        font-size: 7.5rem;
+        text-align: center;
+    }
+}
 /* .content-2 h1 {
     font-size: 12em;
     font-family: var(--font-headings);
@@ -1518,7 +1548,7 @@ body > * {
         width: 10px;
         border-radius: 20px;
         margin: 0 auto;
-        translate: -300% -100%;
+        translate: -310% -100%;
         position: relative;
         z-index: 100;
     }
@@ -1782,7 +1812,7 @@ body > * {
 
 .one-half.text {
     margin: var(--unit-2xl);
-    width: 80%;
+    width: 70%;
     align-items: center;
     align-content: center;
 }
@@ -1860,8 +1890,9 @@ body > * {
     position: relative;
     width: 100%;
     height: auto;
-    background-color: red;
+    /* background-color: red; */
     background-image: none;
+    translate: 0 -15em;
 }
 
 .site-footer .content {
