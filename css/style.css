@@ -372,7 +372,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: var(--unit-s);
-    padding-left: var(--unit-s);
+    padding-left: var(--unit-m);
 }
 
 .navbar .logo svg {
@@ -831,6 +831,7 @@ body > * {
 
 .navbar-toggler {
     border-color: transparent;
+    padding: 1.5em;
 }
 
 .navbar-toggler,
@@ -993,7 +994,7 @@ body > * {
 .description {
     width: 30%;
     position: sticky;
-    top: 0;
+    top: 2em;
     padding: 1em 1em 2em 1em;
 }
 
@@ -1030,7 +1031,7 @@ body > * {
 }}
 
 .description blockquote p {
-    width: 80%;
+    width: 70%;
 	font-size: 1.5rem;
 	/* max-width: 600px; */
 	line-height: 1.4;
@@ -1051,8 +1052,9 @@ body > * {
 
 .description blockquote p:last-of-type:after {
     content: '\201d';
-    position: absolute;
+    position: relative;
 }
+
 /* 
 @media (min-width: 768px) {
     .history_content .left-img {
@@ -1177,12 +1179,12 @@ body > * {
     position: absolute;
     height: 70%;
     width: 100%;
-    top: -3800px;
+    top: -3900px;
     border-radius: 20px;
     animation-timeline: scroll(root);
     animation-name: scaleProgress;
     animation-duration: auto;
-    animation-timing-function: cubic-bezier(0.34, 0, 0.72, 1.08);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.75, 1.2);
 }
 
 @keyframes scaleProgress {
@@ -1818,7 +1820,7 @@ body > * {
 
 .one-half.text {
     margin: var(--unit-2xl);
-    width: 70%;
+    width: 60%;
     align-items: center;
     align-content: center;
 }
@@ -1898,7 +1900,7 @@ body > * {
     height: auto;
     /* background-color: red; */
     background-image: none;
-    translate: 0 -10em;
+    translate: 0 -15em;
 }
 
 .site-footer .content {
