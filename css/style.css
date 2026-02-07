@@ -1897,7 +1897,7 @@ body > * {
     height: auto;
     /* background-color: red; */
     background-image: none;
-    translate: 0 -15em;
+    translate: 0 -10em;
 }
 
 .site-footer .content {
