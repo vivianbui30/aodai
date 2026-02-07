@@ -914,6 +914,7 @@ body > * {
 	position: relative;
 	margin: 0 auto;
 	padding: 50px;
+    max-width: 600px;
 }
 
 .quote blockquote::before {
