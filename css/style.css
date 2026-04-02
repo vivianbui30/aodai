@@ -622,7 +622,7 @@ pre:has(code) {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100svh;
+    max-height: 100svh;
 }
 
 /* TO FIX OVERFLOW WORD BREAK */
